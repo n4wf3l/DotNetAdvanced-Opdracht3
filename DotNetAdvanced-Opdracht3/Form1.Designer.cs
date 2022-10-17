@@ -57,6 +57,7 @@
             this.verwijderenVoetballer = new System.Windows.Forms.Button();
             this.zoekenVoetballer = new System.Windows.Forms.Button();
             this.toevoegenVoetballer = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -89,7 +90,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(490, 20);
+            this.label5.Location = new System.Drawing.Point(488, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 15);
             this.label5.TabIndex = 3;
@@ -121,9 +122,9 @@
             this.label7.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(23, 347);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 15);
+            this.label7.Size = new System.Drawing.Size(88, 15);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Voetbal : ";
+            this.label7.Text = "Voetballer : ";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // integersInput
@@ -158,17 +159,18 @@
             // 
             // integersToevoegen
             // 
+            this.integersToevoegen.BackColor = System.Drawing.Color.Green;
             this.integersToevoegen.Location = new System.Drawing.Point(109, 38);
             this.integersToevoegen.Name = "integersToevoegen";
             this.integersToevoegen.Size = new System.Drawing.Size(91, 63);
             this.integersToevoegen.TabIndex = 11;
             this.integersToevoegen.Text = "Toevoegen";
-            this.integersToevoegen.UseVisualStyleBackColor = true;
+            this.integersToevoegen.UseVisualStyleBackColor = false;
             this.integersToevoegen.Click += new System.EventHandler(this.integersToevoegen_Click_1);
             // 
             // integersZoeken
             // 
-            this.integersZoeken.Location = new System.Drawing.Point(109, 194);
+            this.integersZoeken.Location = new System.Drawing.Point(109, 136);
             this.integersZoeken.Name = "integersZoeken";
             this.integersZoeken.Size = new System.Drawing.Size(91, 23);
             this.integersZoeken.TabIndex = 15;
@@ -188,7 +190,7 @@
             // 
             // integersLeegmaken
             // 
-            this.integersLeegmaken.Location = new System.Drawing.Point(109, 136);
+            this.integersLeegmaken.Location = new System.Drawing.Point(5, 195);
             this.integersLeegmaken.Name = "integersLeegmaken";
             this.integersLeegmaken.Size = new System.Drawing.Size(91, 23);
             this.integersLeegmaken.TabIndex = 30;
@@ -198,17 +200,18 @@
             // 
             // showIntegers
             // 
-            this.showIntegers.Location = new System.Drawing.Point(109, 165);
+            this.showIntegers.BackColor = System.Drawing.Color.IndianRed;
+            this.showIntegers.Location = new System.Drawing.Point(109, 195);
             this.showIntegers.Name = "showIntegers";
             this.showIntegers.Size = new System.Drawing.Size(91, 23);
             this.showIntegers.TabIndex = 31;
             this.showIntegers.Text = "Show";
-            this.showIntegers.UseVisualStyleBackColor = true;
+            this.showIntegers.UseVisualStyleBackColor = false;
             this.showIntegers.Click += new System.EventHandler(this.showIntegers_Click);
             // 
             // integersCopy
             // 
-            this.integersCopy.Location = new System.Drawing.Point(109, 223);
+            this.integersCopy.Location = new System.Drawing.Point(109, 166);
             this.integersCopy.Name = "integersCopy";
             this.integersCopy.Size = new System.Drawing.Size(91, 23);
             this.integersCopy.TabIndex = 32;
@@ -218,7 +221,7 @@
             // 
             // copyStrings
             // 
-            this.copyStrings.Location = new System.Drawing.Point(303, 223);
+            this.copyStrings.Location = new System.Drawing.Point(303, 166);
             this.copyStrings.Name = "copyStrings";
             this.copyStrings.Size = new System.Drawing.Size(91, 23);
             this.copyStrings.TabIndex = 38;
@@ -228,17 +231,18 @@
             // 
             // showStrings
             // 
-            this.showStrings.Location = new System.Drawing.Point(303, 165);
+            this.showStrings.BackColor = System.Drawing.Color.IndianRed;
+            this.showStrings.Location = new System.Drawing.Point(303, 195);
             this.showStrings.Name = "showStrings";
             this.showStrings.Size = new System.Drawing.Size(91, 23);
             this.showStrings.TabIndex = 37;
             this.showStrings.Text = "Show";
-            this.showStrings.UseVisualStyleBackColor = true;
+            this.showStrings.UseVisualStyleBackColor = false;
             this.showStrings.Click += new System.EventHandler(this.showStrings_Click);
             // 
             // leegmakenStrings
             // 
-            this.leegmakenStrings.Location = new System.Drawing.Point(303, 136);
+            this.leegmakenStrings.Location = new System.Drawing.Point(206, 194);
             this.leegmakenStrings.Name = "leegmakenStrings";
             this.leegmakenStrings.Size = new System.Drawing.Size(91, 23);
             this.leegmakenStrings.TabIndex = 36;
@@ -258,7 +262,7 @@
             // 
             // zoekenStrings
             // 
-            this.zoekenStrings.Location = new System.Drawing.Point(303, 194);
+            this.zoekenStrings.Location = new System.Drawing.Point(303, 137);
             this.zoekenStrings.Name = "zoekenStrings";
             this.zoekenStrings.Size = new System.Drawing.Size(91, 23);
             this.zoekenStrings.TabIndex = 34;
@@ -268,17 +272,18 @@
             // 
             // toevoegenStrings
             // 
+            this.toevoegenStrings.BackColor = System.Drawing.Color.Green;
             this.toevoegenStrings.Location = new System.Drawing.Point(303, 38);
             this.toevoegenStrings.Name = "toevoegenStrings";
             this.toevoegenStrings.Size = new System.Drawing.Size(91, 63);
             this.toevoegenStrings.TabIndex = 33;
             this.toevoegenStrings.Text = "Toevoegen";
-            this.toevoegenStrings.UseVisualStyleBackColor = true;
+            this.toevoegenStrings.UseVisualStyleBackColor = false;
             this.toevoegenStrings.Click += new System.EventHandler(this.toevoegenStrings_Click_1);
             // 
             // copyVoetballer
             // 
-            this.copyVoetballer.Location = new System.Drawing.Point(527, 224);
+            this.copyVoetballer.Location = new System.Drawing.Point(527, 166);
             this.copyVoetballer.Name = "copyVoetballer";
             this.copyVoetballer.Size = new System.Drawing.Size(91, 23);
             this.copyVoetballer.TabIndex = 44;
@@ -288,17 +293,18 @@
             // 
             // showListVoetballer
             // 
-            this.showListVoetballer.Location = new System.Drawing.Point(527, 166);
+            this.showListVoetballer.BackColor = System.Drawing.Color.IndianRed;
+            this.showListVoetballer.Location = new System.Drawing.Point(527, 195);
             this.showListVoetballer.Name = "showListVoetballer";
             this.showListVoetballer.Size = new System.Drawing.Size(91, 23);
             this.showListVoetballer.TabIndex = 43;
             this.showListVoetballer.Text = "Show";
-            this.showListVoetballer.UseVisualStyleBackColor = true;
+            this.showListVoetballer.UseVisualStyleBackColor = false;
             this.showListVoetballer.Click += new System.EventHandler(this.showListVoetballer_Click);
             // 
             // leegmakenVoetballer
             // 
-            this.leegmakenVoetballer.Location = new System.Drawing.Point(527, 137);
+            this.leegmakenVoetballer.Location = new System.Drawing.Point(430, 194);
             this.leegmakenVoetballer.Name = "leegmakenVoetballer";
             this.leegmakenVoetballer.Size = new System.Drawing.Size(91, 23);
             this.leegmakenVoetballer.TabIndex = 42;
@@ -318,7 +324,7 @@
             // 
             // zoekenVoetballer
             // 
-            this.zoekenVoetballer.Location = new System.Drawing.Point(527, 195);
+            this.zoekenVoetballer.Location = new System.Drawing.Point(527, 137);
             this.zoekenVoetballer.Name = "zoekenVoetballer";
             this.zoekenVoetballer.Size = new System.Drawing.Size(91, 23);
             this.zoekenVoetballer.TabIndex = 40;
@@ -328,13 +334,23 @@
             // 
             // toevoegenVoetballer
             // 
+            this.toevoegenVoetballer.BackColor = System.Drawing.Color.Green;
             this.toevoegenVoetballer.Location = new System.Drawing.Point(527, 37);
             this.toevoegenVoetballer.Name = "toevoegenVoetballer";
             this.toevoegenVoetballer.Size = new System.Drawing.Size(91, 65);
             this.toevoegenVoetballer.TabIndex = 39;
             this.toevoegenVoetballer.Text = "Toevoegen";
-            this.toevoegenVoetballer.UseVisualStyleBackColor = true;
+            this.toevoegenVoetballer.UseVisualStyleBackColor = false;
             this.toevoegenVoetballer.Click += new System.EventHandler(this.toevoegenVoetballer_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(178, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(289, 15);
+            this.label3.TabIndex = 45;
+            this.label3.Text = "* Na leeg te hebben gemaakt, weer op \'Show\' klikken.";
             // 
             // Form1
             // 
@@ -342,6 +358,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(639, 383);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.copyVoetballer);
             this.Controls.Add(this.showListVoetballer);
             this.Controls.Add(this.leegmakenVoetballer);
@@ -409,5 +426,6 @@
         private Button verwijderenVoetballer;
         private Button zoekenVoetballer;
         private Button toevoegenVoetballer;
+        private Label label3;
     }
 }

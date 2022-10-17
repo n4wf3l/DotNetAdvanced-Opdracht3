@@ -6,37 +6,37 @@ namespace DotNetAdvanced_Opdracht3
     internal class Stapel<Stapeltje>
     {
 
-        private List<Stapeltje> Stapellijst = new List<Stapeltje>();
+        private List<Stapeltje> listOfStapel = new List<Stapeltje>();
         private List<Stapeltje> stapellijstCopy = new List<Stapeltje>();
 
 
         public void OpDeStapel(Stapeltje toeTeVoegen)
         {
-            Stapellijst.Add(toeTeVoegen);
+            listOfStapel.Add(toeTeVoegen);
         }
 
         public Stapeltje vanDeStapel()
         {
-            if (Stapellijst.Count <= 0)
+            if (listOfStapel.Count <= 0)
             {
                 throw new ArgumentNullException();
             }
 
-            Stapeltje updatedLijst = Stapellijst[Stapellijst.Count - 1];
-            Stapellijst.RemoveAt(Stapellijst.Count - 1);
+            Stapeltje updatedLijst = listOfStapel[listOfStapel.Count - 1];
+            listOfStapel.RemoveAt(listOfStapel.Count - 1);
 
             return updatedLijst;
         }
 
         public void StapelLeegMaken()
         {
-            Stapellijst.Clear();
+            listOfStapel.Clear();
         }
 
 
         public bool IsAanwezigOpStapel(Stapeltje search)
         {
-            foreach (Stapeltje elements in Stapellijst)
+            foreach (Stapeltje elements in listOfStapel)
             {
 
                 if (elements.ToString() == search.ToString())
@@ -56,7 +56,7 @@ namespace DotNetAdvanced_Opdracht3
         {
             string lijst = "";
 
-            foreach (Stapeltje s in Stapellijst)
+            foreach (Stapeltje s in listOfStapel)
             {
                 lijst += s.ToString() + " " + ",";
             }
@@ -66,7 +66,7 @@ namespace DotNetAdvanced_Opdracht3
 
         public List<Stapeltje> lijstCopy()
         {
-            stapellijstCopy = Stapellijst.GetRange(0, Stapellijst.Count);
+            stapellijstCopy = listOfStapel.GetRange(0, listOfStapel.Count);
 
             return stapellijstCopy;
         }
