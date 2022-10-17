@@ -57,7 +57,7 @@ namespace DotNetAdvanced_Opdracht3
             }
             else
             {
-                MessageBox.Show(" de stapel is al leeg ! ");
+                MessageBox.Show(" de lijst is leeg ! ");
             }
 
         }
@@ -75,7 +75,7 @@ namespace DotNetAdvanced_Opdracht3
 
         private void integersCopy_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" old list : " + integers.ToString() + "\n new list  de nieuwe lijst is : " + " " +
+            MessageBox.Show("oude lijst : " + integers.ToString() + "\n de nieuwe lijst is : " + " " +
                String.Join(",", integers.lijstCopy()));
 
         }
@@ -92,11 +92,11 @@ namespace DotNetAdvanced_Opdracht3
             if (integers.IsAanwezigOpStapel(int.Parse(integersInput.Text)))
             {
 
-                MessageBox.Show(integersInput.Text + " " + "is aanwezig op de stapel van integers");
+                MessageBox.Show(integersInput.Text + " " + "is aanwezig op het lijstje");
             }
             else
             {
-                MessageBox.Show("sorry maar " + integersInput.Text + " bestaat niet op de stapel");
+                MessageBox.Show("Error : " + integersInput.Text + " is niet toegevoegd.");
             }
 
             integersInput.Text = null;
@@ -112,7 +112,7 @@ namespace DotNetAdvanced_Opdracht3
             }
             else
             {
-                MessageBox.Show("de stapel is al leeg !");
+                MessageBox.Show("de lijstje is al leeg !");
             }
 
         }
@@ -131,11 +131,11 @@ namespace DotNetAdvanced_Opdracht3
         {
             if (strings.IsAanwezigOpStapel(stringsInput.Text))
             {
-                MessageBox.Show(stringsInput.Text + " " + "is aanwezig op de stapel van strings");
+                MessageBox.Show(stringsInput.Text + " " + "is aanwezig op de lijstje");
             }
             else
             {
-                MessageBox.Show("sorry maar " + stringsInput.Text + " bestaat niet op de stapel");
+                MessageBox.Show(stringsInput.Text + " bestaat niet op de lijstje");
             }
 
             stringsInput.Text = null;
@@ -153,12 +153,12 @@ namespace DotNetAdvanced_Opdracht3
             if (tb_voetballer.Text == string.Empty || inputLeeftijd.Text == string.Empty)
             {
 
-                MessageBox.Show("beide velden moeten ingevuld worden ! ");
+                MessageBox.Show("beide velden moeten ingevuld zijn ! ");
 
             }
             else if (IsEveritingDigit(inputLeeftijd.Text) == false)
             {
-                MessageBox.Show(" leeftijd moet enkel getallen bevatten");
+                MessageBox.Show("leeftijd mag enkel getallen bevatten.");
             }
 
             else
@@ -178,7 +178,7 @@ namespace DotNetAdvanced_Opdracht3
             }
             else
             {
-                MessageBox.Show("sorry maar de stapel is al leeg !");
+                MessageBox.Show("de lijstje is al leeg !");
             }
 
         }
@@ -190,24 +190,24 @@ namespace DotNetAdvanced_Opdracht3
 
         private void showListVoetballer_Click(object sender, EventArgs e)
         {
-            label7.Text = "personen : " + voetballer.ToString();
+            label7.Text = "* " + voetballer.ToString();
         }
 
         private void zoekenVoetballer_Click(object sender, EventArgs e)
         {
             if (voetballer.IsAanwezigOpStapel(new Voetballer(tb_voetballer.Text, int.Parse(inputLeeftijd.Text))))
             {
-                MessageBox.Show(" de persoon met naam : " + " " + tb_voetballer.Text + " en met leeftijd : " + " " + inputLeeftijd.Text + " " + "is aanwezig in de lijst van personen");
+                MessageBox.Show("De voetballer " + tb_voetballer.Text + " (" + inputLeeftijd.Text + ") " + "is aanwezig in de lijst van voetballers");
             }
             else
             {
-                MessageBox.Show("de persoon met naam : " + " " + tb_voetballer.Text + " " + "bestaat niet in de lijst");
+                MessageBox.Show("de voetballer met naam : " + " " + tb_voetballer.Text + " " + "bestaat niet in de lijst");
             }
         }
 
         private void copyVoetballer_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" old list : " + voetballer.ToString() + "\n new list  de nieuwe lijst is : " + " " +
+            MessageBox.Show(" oude lijst : " + voetballer.ToString() + "\n  de nieuwe lijst is : " + " " +
                 String.Join(":", voetballer.lijstCopy()));
         }
 
@@ -221,5 +221,9 @@ namespace DotNetAdvanced_Opdracht3
 
         }
 
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

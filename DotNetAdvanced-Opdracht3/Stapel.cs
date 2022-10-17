@@ -34,12 +34,12 @@ namespace DotNetAdvanced_Opdracht3
         }
 
 
-        public bool IsAanwezigOpStapel(Stapeltje tezoeken)
+        public bool IsAanwezigOpStapel(Stapeltje search)
         {
             foreach (Stapeltje elements in Stapellijst)
             {
 
-                if (elements.ToString() == tezoeken.ToString())
+                if (elements.ToString() == search.ToString())
                 {
 
                     return true;
@@ -56,9 +56,9 @@ namespace DotNetAdvanced_Opdracht3
         {
             string lijst = "";
 
-            foreach (Stapeltje t in Stapellijst)
+            foreach (Stapeltje s in Stapellijst)
             {
-                lijst += t.ToString() + " " + ",";
+                lijst += s.ToString() + " " + ",";
             }
 
             return lijst;

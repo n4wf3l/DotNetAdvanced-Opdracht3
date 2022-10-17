@@ -80,7 +80,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(487, 20);
+            this.label4.Location = new System.Drawing.Point(400, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 2;
@@ -89,7 +89,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(487, 64);
+            this.label5.Location = new System.Drawing.Point(490, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 15);
             this.label5.TabIndex = 3;
@@ -98,29 +98,33 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(89, 306);
+            this.label6.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(23, 292);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 15);
+            this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 4;
-            this.label6.Text = "Integers";
+            this.label6.Text = "Integers : ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(95, 336);
+            this.label8.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(23, 319);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 15);
+            this.label8.Size = new System.Drawing.Size(64, 15);
             this.label8.TabIndex = 5;
-            this.label8.Text = "Strings";
+            this.label8.Text = "Strings :";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(82, 370);
+            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(23, 347);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 15);
+            this.label7.Size = new System.Drawing.Size(67, 15);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Personen";
+            this.label7.Text = "Voetbal : ";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // integersInput
             // 
@@ -139,14 +143,14 @@
             // 
             // tb_voetballer
             // 
-            this.tb_voetballer.Location = new System.Drawing.Point(487, 38);
+            this.tb_voetballer.Location = new System.Drawing.Point(400, 38);
             this.tb_voetballer.Name = "tb_voetballer";
             this.tb_voetballer.Size = new System.Drawing.Size(91, 23);
             this.tb_voetballer.TabIndex = 9;
             // 
             // inputLeeftijd
             // 
-            this.inputLeeftijd.Location = new System.Drawing.Point(490, 82);
+            this.inputLeeftijd.Location = new System.Drawing.Point(497, 38);
             this.inputLeeftijd.Name = "inputLeeftijd";
             this.inputLeeftijd.Size = new System.Drawing.Size(24, 23);
             this.inputLeeftijd.TabIndex = 10;
@@ -274,7 +278,7 @@
             // 
             // copyVoetballer
             // 
-            this.copyVoetballer.Location = new System.Drawing.Point(490, 298);
+            this.copyVoetballer.Location = new System.Drawing.Point(527, 224);
             this.copyVoetballer.Name = "copyVoetballer";
             this.copyVoetballer.Size = new System.Drawing.Size(91, 23);
             this.copyVoetballer.TabIndex = 44;
@@ -284,7 +288,7 @@
             // 
             // showListVoetballer
             // 
-            this.showListVoetballer.Location = new System.Drawing.Point(490, 240);
+            this.showListVoetballer.Location = new System.Drawing.Point(527, 166);
             this.showListVoetballer.Name = "showListVoetballer";
             this.showListVoetballer.Size = new System.Drawing.Size(91, 23);
             this.showListVoetballer.TabIndex = 43;
@@ -294,7 +298,7 @@
             // 
             // leegmakenVoetballer
             // 
-            this.leegmakenVoetballer.Location = new System.Drawing.Point(490, 211);
+            this.leegmakenVoetballer.Location = new System.Drawing.Point(527, 137);
             this.leegmakenVoetballer.Name = "leegmakenVoetballer";
             this.leegmakenVoetballer.Size = new System.Drawing.Size(91, 23);
             this.leegmakenVoetballer.TabIndex = 42;
@@ -304,7 +308,7 @@
             // 
             // verwijderenVoetballer
             // 
-            this.verwijderenVoetballer.Location = new System.Drawing.Point(490, 182);
+            this.verwijderenVoetballer.Location = new System.Drawing.Point(527, 108);
             this.verwijderenVoetballer.Name = "verwijderenVoetballer";
             this.verwijderenVoetballer.Size = new System.Drawing.Size(91, 23);
             this.verwijderenVoetballer.TabIndex = 41;
@@ -314,7 +318,7 @@
             // 
             // zoekenVoetballer
             // 
-            this.zoekenVoetballer.Location = new System.Drawing.Point(490, 269);
+            this.zoekenVoetballer.Location = new System.Drawing.Point(527, 195);
             this.zoekenVoetballer.Name = "zoekenVoetballer";
             this.zoekenVoetballer.Size = new System.Drawing.Size(91, 23);
             this.zoekenVoetballer.TabIndex = 40;
@@ -324,7 +328,7 @@
             // 
             // toevoegenVoetballer
             // 
-            this.toevoegenVoetballer.Location = new System.Drawing.Point(490, 111);
+            this.toevoegenVoetballer.Location = new System.Drawing.Point(527, 37);
             this.toevoegenVoetballer.Name = "toevoegenVoetballer";
             this.toevoegenVoetballer.Size = new System.Drawing.Size(91, 65);
             this.toevoegenVoetballer.TabIndex = 39;
@@ -336,7 +340,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 451);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(639, 383);
             this.Controls.Add(this.copyVoetballer);
             this.Controls.Add(this.showListVoetballer);
             this.Controls.Add(this.leegmakenVoetballer);
@@ -367,7 +372,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Int&String-Generator";
             this.ResumeLayout(false);
             this.PerformLayout();
 

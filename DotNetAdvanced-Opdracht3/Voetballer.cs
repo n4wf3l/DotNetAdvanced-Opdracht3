@@ -2,20 +2,18 @@
 {
     internal class Voetballer
     {
-        private string Naam { get; set; }
+        private string NaamVoetballer { get; set; }
         private int Leeftijd { get; set; }
 
         public Voetballer(string naam, int leeftijd)
         {
-            Naam = naam;
+            NaamVoetballer= naam;
             Leeftijd = leeftijd;
         }
+
         public override string ToString()
         {
-            return "ik noem " + Naam + " en ik ben " + Leeftijd;
+            return "De voetballer is " + NaamVoetballer + " en is " + Leeftijd + " jaar oud.";
         }
-
-
-
     }
 }
